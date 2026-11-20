@@ -1,0 +1,814 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6fff6;
+color:#333;
+}
+
+/* Header */
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+background:#b73e3e;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+}
+
+.logo i{
+font-size:30px;
+color:#a8eb0c;
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:.4s;
+
+}
+
+nav a:hover{
+
+color:#ffd54f;
+
+}
+
+/* Hero */
+
+.hero{
+
+height:90vh;
+
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("home.jpg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero-content{
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+margin-bottom:35px;
+
+}
+
+.btn{
+
+padding:15px 40px;
+background:#ff9800;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#ff5722;
+
+}
+
+section{
+
+padding:80px 10%;
+
+}
+
+section h2{
+
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#2e7d32;
+
+}
+
+.about p{
+
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+
+}
+
+/* Products */
+
+.product-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:40px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:50px;
+color:#43a047;
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* Services */
+
+.service-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+text-align:center;
+
+}
+
+.service-grid div{
+
+background:#2e7d32;
+color:white;
+padding:30px;
+border-radius:12px;
+
+}
+
+.service-grid i{
+
+font-size:40px;
+margin-bottom:15px;
+
+}
+
+/* Reviews */
+
+.testimonial{
+
+background:#e8f5e9;
+
+}
+
+.review{
+
+max-width:700px;
+margin:auto;
+text-align:center;
+font-size:20px;
+
+}
+
+/* Contact */
+
+form{
+
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+
+}
+
+input,
+textarea{
+
+padding:15px;
+margin:15px 0;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+button{
+
+padding:15px;
+background:#2e7d32;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+
+}
+
+button:hover{
+
+background:#1b5e20;
+
+}
+
+/* Footer */
+
+footer{
+
+background:#570c0c;
+color:rgb(227, 222, 243);
+text-align:center;
+padding:25px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+display:inline-block;
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+/* =========================
+   OUR PRODUCTS
+========================= */
+
+.products-section {
+    padding: 80px 8%;
+    background: #f4fff4;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #2e7d32;
+    margin-bottom: 55px;
+}
+
+
+/* Product Grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+/* Product Card */
+
+.product-card {
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+
+/* Button Mushroom Background */
+
+.button-mushroom {
+    background-image: url("mus.jpg");
+}
+
+
+/* Oyster Mushroom Background */
+
+.oyster-mushroom {
+    background-image: url("oo.jpg");
+}
+
+
+/* Milky Mushroom Background */
+
+.milky-mushroom {
+    background-image: url("butter.jpg");
+}
+
+
+/* Dark Overlay */
+
+.product-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    transition: background 0.4s ease;
+}
+
+
+/* Product Content */
+
+.product-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+
+    padding: 30px;
+}
+
+
+/* Icon */
+
+.product-content i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* Product Name */
+
+.product-content h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.product-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+
+.product-content button {
+    padding: 11px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #43a047;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.product-content button:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+}
+
+
+/* Hover Effect */
+
+.product-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.20);
+}
+
+.product-card:hover .product-overlay {
+    background: rgba(0, 0, 0, 0.58);
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        height: 320px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .products-section h2 {
+        font-size: 36px;
+    }
+
+    .product-card {
+        height: 280px;
+    }
+    /* =========================================
+   3D MUSHROOM AREA
+========================================= */
+
+.mushroom-3d-area {
+
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    perspective: 1200px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f1fff1 0%,
+            #ffffff 70%,
+            #d8ead8 100%
+        );
+
+}
+
+
+/* =========================================
+   FLOOR
+========================================= */
+
+.mushroom-floor {
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 5%;
+
+    width: 90%;
+    height: 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b5cdb5,
+            #e8f5e8,
+            #b5cdb5
+        );
+
+    border-radius: 50%;
+
+    transform:
+        rotateX(65deg);
+
+    box-shadow:
+        0 20px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================================
+   3D OBJECT
+========================================= */
+
+.floating-mushroom {
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+    left: 50%;
+
+    transform-style: preserve-3d;
+
+    filter:
+        drop-shadow(
+            0 25px 15px rgba(0,0,0,0.2)
+        );
+
+    animation:
+        mushroomFall 4s
+        cubic-bezier(.2,.8,.3,1)
+        infinite;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+/* =========================================
+   DIFFERENT POSITIONS
+========================================= */
+
+.mushroom-1 {
+
+    left: 15%;
+
+    width: 140px;
+
+    animation-delay: 0s;
+
+}
+
+
+.mushroom-2 {
+
+    left: 42%;
+
+    width: 170px;
+
+    animation-delay: 1s;
+
+}
+
+
+.mushroom-3 {
+
+    left: 70%;
+
+    width: 150px;
+
+    animation-delay: 2s;
+
+}
+
+
+/* =========================================
+   FALL + BOUNCE
+========================================= */
+
+@keyframes mushroomFall {
+
+    0% {
+
+        top: -180px;
+
+        opacity: 0;
+
+        transform:
+            translate3d(0,0,400px)
+            rotateX(0deg)
+            rotateY(0deg)
+            rotateZ(0deg);
+
+    }
+
+    15% {
+
+        opacity: 1;
+
+    }
+
+    60% {
+
+        top: 300px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            rotateX(180deg)
+            rotateY(220deg)
+            rotateZ(25deg);
+
+    }
+
+    70% {
+
+        top: 255px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            scaleY(1.1)
+            rotateX(200deg)
+            rotateY(250deg);
+
+    }
+
+    78% {
+
+        top: 300px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            scaleY(0.9)
+            rotateX(250deg)
+            rotateY(280deg);
+
+    }
+
+    86% {
+
+        top: 270px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            scaleY(1.05)
+            rotateX(300deg)
+            rotateY(320deg);
+
+    }
+
+    94% {
+
+        top: 300px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            scaleY(0.95)
+            rotateX(360deg)
+            rotateY(360deg);
+
+    }
+
+    100% {
+
+        top: 300px;
+
+        transform:
+            translate3d(
+                var(--start-x),
+                0,
+                0
+            )
+            rotateX(360deg)
+            rotateY(360deg)
+            rotateZ(360deg);
+
+    }
+
+}
+
+
+/* =========================================
+   CLICK BOUNCE
+========================================= */
+
+.floating-mushroom.clicked {
+
+    animation:
+        clickBounce 0.8s ease;
+
+}
+
+
+@keyframes clickBounce {
+
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform:
+            scale(1.2)
+            rotateY(180deg);
+    }
+
+    60% {
+        transform:
+            scale(0.9)
+            rotateY(360deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .mushroom-3d-area {
+
+        height: 420px;
+
+    }
+
+    .floating-mushroom {
+
+        width: 100px;
+
+    }
+
+    .mushroom-1 {
+        left: 5%;
+    }
+
+    .mushroom-2 {
+        left: 38%;
+    }
+
+    .mushroom-3 {
+        left: 70%;
+    }
+
+}
+
+}

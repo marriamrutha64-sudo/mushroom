@@ -1,0 +1,117 @@
+# Query: 
+# ContextLines: 1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Bags | Premium Bags Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">👜 Elite Bags</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="cart-btn">Cart</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Premium Bags for Every Style</h1>
+            <p>Discover elegant handbags, backpacks, travel bags, and office bags with premium quality.</p>
+
+            <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Collection -->
+
+    <section class="products">
+
+        <h2>Featured Collection</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="">
+                <h3>Leather Handbag</h3>
+                <p>₹2,499</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600" alt="">
+                <h3>Travel Backpack</h3>
+                <p>₹3,299</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600" alt="">
+                <h3>Office Laptop Bag</h3>
+                <p>₹2,999</p>
+                <button>View Details</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <div class="feature">
+            <h3>Premium Quality</h3>
+            <p>High-quality materials with modern craftsmanship.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Free Shipping</h3>
+            <p>Free delivery on orders above ₹999.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Secure Payment</h3>
+            <p>100% secure online payment options.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Easy Returns</h3>
+            <p>7-day hassle-free return policy.</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Elite Bags</h2>
+
+        <p>Premium Bags for Every Occasion</p>
+
+        <p>Email: info@elitebags.com</p>
+
+        <p>Phone: +91 9876543210</p>
+
+        <p>© 2026 Elite Bags. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>

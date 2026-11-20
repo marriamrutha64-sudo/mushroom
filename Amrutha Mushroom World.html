@@ -1,0 +1,600 @@
+
+<!-- saved from url=(0052)file:///C:/Users/AI/Desktop/mushroom/index.html#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amrutha Mushroom World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7fff8;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #267a3b;
+        }
+
+        .logo span {
+            color: #d69e2e;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #267a3b;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background:
+                linear-gradient(rgba(0,60,20,0.55), rgba(0,60,20,0.55)),
+                url("images/mushroom-hero.jpg") center/cover;
+        }
+
+        .hero-content {
+            max-width: 650px;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: #ffd86b;
+        }
+
+        .hero-content p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #d69e2e;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background: #b7831f;
+        }
+
+        .btn-green {
+            background: #267a3b;
+        }
+
+        /* ABOUT */
+        .section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #267a3b;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .about {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: 35px;
+            color: #267a3b;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            background: #eef9ef;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 22px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            color: #267a3b;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d69e2e;
+        }
+
+        /* WHY US */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #267a3b;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #267a3b;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #123d20;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero-content h1 {
+                font-size: 42px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .hero-content h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+
+
+
+
+    <!-- NAVBAR -->
+    <header>
+
+        <div class="logo">
+            🍄 Amrutha <span>Mushroom World</span>
+        </div>
+
+        <nav>
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#home">Home</a>
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#about">About</a>
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#products">Products</a>
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#why-us">Why Us</a>
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Fresh &amp; Healthy
+                <span>Mushrooms</span>
+            </h1>
+
+            <p>
+                Welcome to Amrutha Mushroom World.
+                We provide fresh, hygienically grown and
+                naturally cultivated mushrooms for healthy living.
+            </p>
+
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#products" class="btn">
+                Explore Products
+            </a>
+
+            <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#contact" class="btn btn-green">
+                Contact Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+        <div class="about">
+
+            <div class="about-image">
+                <img src="file:///C:/Users/AI/Desktop/mushroom/mushroom-farm.jpg" alt="Mushroom Farm">
+            </div>
+
+            <div class="about-content">
+
+                <h2>About Amrutha Mushroom World</h2>
+
+                <p>
+                    Amrutha Mushroom World is dedicated to producing
+                    fresh and high-quality mushrooms using modern
+                    cultivation techniques.
+                </p>
+
+                <p>
+                    Our mission is to provide nutritious mushrooms
+                    while maintaining excellent hygiene, freshness
+                    and quality.
+                </p>
+
+                <p>
+                    From our growing farm to your kitchen,
+                    we make sure our mushrooms are fresh and healthy.
+                </p>
+
+                <a href="file:///C:/Users/AI/Desktop/mushroom/index.html#contact" class="btn">
+                    Know More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="section products" id="products">
+
+        <div class="section-title">
+
+            <h2>Our Products</h2>
+
+            <p>
+                Fresh mushrooms carefully grown and packed for you
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <div class="product-card">
+
+                <img src="./Amrutha Mushroom World_files/oyster.jpg" alt="Oyster Mushroom">
+
+                <div class="product-info">
+
+                    <h3>Oyster Mushroom</h3>
+
+                    <p>
+                        Fresh, soft and delicious oyster mushrooms
+                        suitable for many healthy recipes.
+                    </p>
+
+                    <div class="price">
+                        ₹180 / Kg
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="./Amrutha Mushroom World_files/botton.webp" alt="Button Mushroom">
+
+                <div class="product-info">
+
+                    <h3>Button Mushroom</h3>
+
+                    <p>
+                        Fresh button mushrooms packed with
+                        nutrition and great taste.
+                    </p>
+
+                    <div class="price">
+                        ₹220 / Kg
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img src="./Amrutha Mushroom World_files/mammu.jpg" alt="Mushroom Growing Bag">
+-
+                <div class="product-info">
+
+                    <h3>Mushroom Growing Bags</h3>
+
+                    <p>
+                        High-quality mushroom growing bags
+                        for cultivation.
+                    </p>
+
+                    <div class="price">
+                        ₹80 / Bag
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+    <section class="section" id="why-us">
+
+        <div class="section-title">
+
+            <h2>Why Choose Us?</h2>
+
+            <p>
+                Quality and freshness you can trust
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">🌱</div>
+
+                <h3>Natural Growing</h3>
+
+                <p>
+                    Mushrooms cultivated with modern
+                    and hygienic methods.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🍄</div>
+
+                <h3>Fresh Products</h3>
+
+                <p>
+                    Freshly harvested mushrooms delivered
+                    with excellent quality.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">💚</div>
+
+                <h3>Healthy</h3>
+
+                <p>
+                    Nutritious mushrooms for a healthy
+                    and balanced lifestyle.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🚚</div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Fresh products carefully packed
+                    and delivered to customers.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+
+        <h2>Get Fresh Mushrooms Today!</h2>
+
+        <p>
+            Contact Amrutha Mushroom World for orders
+            and business enquiries.
+        </p>
+
+        <a href="tel:6305470421" class="btn">
+            📞 Call Us
+        </a>
+
+        <a href="mailto:marriamrutha@gmail.com" class="btn">
+           class="btn"&gt;
+            ✉ Email Us
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Amrutha Mushroom World.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+```
+</body></html>
